@@ -2,7 +2,7 @@ import os
 from utils.logging import logging
 
 
-def clean(path):
+def clean(path: str):
     """
         Drop all files located in the path.
 

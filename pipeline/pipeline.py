@@ -18,16 +18,16 @@ class Pipeline:
         self.spark = spark
         logging.info(f"Test spark {self.spark.sparkContext.getConf().getAll()}")
 
-    def first_pipeline(self):
+    def first_pipeline(self) -> object:
         """
-        Run first pipeline
+                Run first pipeline
 
-            Parameters:
-                    self
+                    Parameters:
+                            self
 
-            Returns:
-                    None
-        """
+                    Returns:
+                            None
+                """
         logging.info("Start first pipeline")
         logging.info(f"{LOCAL.logs}")
 

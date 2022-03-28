@@ -5,7 +5,7 @@ from pipeline.pipeline import Pipeline
 
 @click.group(invoke_without_command=True)
 @click.option("--pipeline", default="initdb")
-def cli(pipeline):
+def cli(pipeline: str):
     if pipeline == "initdb":
         initdb()
     else:
